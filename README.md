@@ -8,6 +8,10 @@ This a repo to publish some CSS Snippets and plugins for Obsidian
 1. [Boldisblue.css](boldisblue.css) : The bold text is automatically put in blue
 2. [Italicisblue.css](italicisblue.css) : The italic text is automatically put in blue
 
+### Templates :
+
+1. [Journaling accounting](compta-journal.css) : A CSS template to have a template for the journaling in accouting. 
+
 ### Folders :
 
 1. [Titlefolderisblue.css](titlefolderisblue.css) : The titles of all the folders are blue
