@@ -1,0 +1,51 @@
+/* Style pour le journal de comptabilité */
+.journal-compta table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* En-têtes */
+.journal-compta th {
+    background-color: var(--background-secondary-alt);
+    color: var(--text-accent);
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    padding: 12px;
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* Cellules */
+.journal-compta td {
+    padding: 10px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    vertical-align: middle;
+}
+
+/* Alignement spécifique selon le contenu */
+.journal-compta td:nth-child(3), 
+.journal-compta td:nth-child(4) {
+    text-align: right; /* Montant et Crédit/Débit à droite */
+    font-variant-numeric: tabular-nums; /* Chiffres alignés */
+}
+
+/* Couleurs Débit/Crédit (Optionnel) */
+.journal-compta td:contains("Débit"), 
+.journal-compta td:contains("DEBIT") {
+    color: #e67e22; /* Orange */
+    font-weight: bold;
+}
+
+.journal-compta td:contains("Crédit"), 
+.journal-compta td:contains("CREDIT") {
+    color: #27ae60; /* Vert */
+    font-weight: bold;
+}
+
+/* Effet au survol de la ligne */
+.journal-compta tr:hover {
+    background-color: var(--background-modifier-hover);
+}
